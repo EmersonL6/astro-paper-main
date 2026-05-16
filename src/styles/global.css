@@ -68,3 +68,80 @@ html[data-theme="dark"] {
 :target {
   scroll-margin-block: 1rem;
 }
+/* 聊天气泡 */
+
+/* 聊天气泡 */
+
+.chat {
+  max-width: 75%;
+  padding: 14px 18px;
+  margin: 16px 0;
+  border-radius: 18px;
+  line-height: 1.8;
+  word-break: break-word;
+  color: white;
+  font-size: 17px;
+}
+
+.chat.left {
+  background: #334155;
+  margin-right: auto;
+  border-bottom-left-radius: 6px;
+}
+
+.chat.right {
+  background: #2563eb;
+  margin-left: auto;
+  border-bottom-right-radius: 6px;
+  text-align: right;
+}
+/* 聊天界面 */
+
+./* 聊天消息 */
+
+/* 聊天框 */
+
+.chat-msg {
+  margin: 18px 0;
+}
+
+.msg-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.msg-name {
+  font-weight: 600;
+}
+
+.msg-time {
+  font-size: 12px;
+}
+
+.msg-bubble {
+  background: #2563eb;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 16px;
+  width: fit-content;
+  max-width: 75%;
+  line-height: 1.7;
+}
+.handwriting-text {
+  font-family: KaiTi, STKaiti, serif !important;
+  font-size: 1.35rem !important;
+  line-height: 2.3 !important;
+  color: #f4f4f4 !important;
+  letter-spacing: 0.03em;
+  margin: 3rem 0;
+}
+
+.handwriting-text br {
+  display: block;
+  margin-bottom: 1.2em;
+  content: "";
+}

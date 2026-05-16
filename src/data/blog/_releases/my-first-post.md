@@ -6,7 +6,6 @@ postSlug: "my-first-post"
 featured: true
 draft: false
 tags:
-  - 日记
   - test
 description: "这是我的第一篇博客"
 ---

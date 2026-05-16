@@ -3,35 +3,18 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+思来想去，第一句应该还是要介绍一下自己：一个（想并努力在学习）养家畜家禽的。
 
-![Astro Paper](public/astropaper-og.jpg)
+为什么想要搭建个人博客？尤其在自媒体盛行的今天，人们大可去社交媒体平台书写自己的见解和故事。
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+但那不是我的目的，也不符合我的期待。说说三点反面原因。原因一，社交媒体平台于我而言，更像是搜寻外界讯息的工具，在社交媒体平台发表意见也不是我喜欢做的事情；原因二，无比厌恶平台的审核机制（我承认这套机制的合理与必要之处，但这不代表我喜欢它）；原因三，当今平台讲求垂直内容，像个人博客这种什么题材类型都有的，绝对是不被平台支持的（简而言之，想要流量平台也不会给）。
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+这个网站经历了个人搭建（第一次以失败告终）——我编程素养基本为0，期间全靠和AI交流，copy代码搭建起来的网站（此处感谢AI）、测试、发布全过程。一套流程做下来还是颇有成就感。
 
-## Features
+19岁认真学习专业知识以来，我的理想变成了：一个养好动物的人。但活在世界上，光是养好动物是不足够的。在生活的体验中，“个体时刻面临着主体被刺穿的风险——失去对自身的掌控”。时时刻刻，我都可能会经历“开始行动-失败-重来”。而在这些经历中，我必须明白：我经历了什么。我周围的环境发生了什么。
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+还是初高中生的时候（更早可以追溯到小学），我十分喜欢虚构类型的小说创作。然而当我步入大学后，并非想象力锐减（相反，因为阅读的积累我可以创作出比以往更好的人物设定与世界观），只是发现虚构类型的题材无法再完全承担我的创作欲望以及实际需求。这让我诅丧了一会，但最终不得不面对现实，虚构类型确有其局限性。如果我想留下一些“自己以及时代的声音”，不要在某天离开这个世界后，台上的话筒被人夺去，留下沉默，那就得把那层闪亮迷人的、安全的膜撕掉，把自己推去面对以往不想、不敢、也没办法面对的事物。
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+对于非虚构创作，创作者确实容易陷入一种道德困境。文字的巧言令色？记忆的不确定性？但创作作为体验的一种，从来就不是什么安全的事情——在审视解剖完自身后，再接受一次来自他人的审视与解剖。人总是要为自己的文字负责。正因仍为“生者”，才更应该珍惜自己拥有创作的权力。同时提醒自己，不存在完美的创作者与故事。对于虚构的创作，那还是一次次跳跃，越跳越高，去挑战想象力的极限。对于其他，则诚实地记录。
 
-and so much more.
-
-## Show your support
-
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+以上便是一个养动物的人在2026年5月16日并不成熟的博客简介。感谢阅读。
