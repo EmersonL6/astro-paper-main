@@ -1,7 +1,7 @@
 ---
 author: "你的名字"
-pubDatetime: 2026-01-20T10:00:00Z
-title: "我的第一篇博客"
+pubDatetime: 2023-05-18T10:00:00Z
+title: "阿湖坡/A Hu Po"
 postSlug: "阿湖坡"
 featured: true
 draft: false
