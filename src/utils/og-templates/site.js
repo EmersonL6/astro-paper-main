@@ -1,6 +1,7 @@
+import fs from "node:fs";
+import path from "node:path";
 import satori from "satori";
 import { SITE } from "@/config";
-import loadGoogleFonts from "../loadGoogleFont";
 
 export default async () => {
   return satori(
@@ -77,14 +78,19 @@ export default async () => {
                           {
                             type: "p",
                             props: {
-                              style: { fontSize: 72, fontWeight: "bold" },
+                              style: {
+                                fontSize: 72,
+                                fontWeight: "bold",
+                              },
                               children: SITE.title,
                             },
                           },
                           {
                             type: "p",
                             props: {
-                              style: { fontSize: 28 },
+                              style: {
+                                fontSize: 28,
+                              },
                               children: SITE.desc,
                             },
                           },
@@ -104,7 +110,10 @@ export default async () => {
                         children: {
                           type: "span",
                           props: {
-                            style: { overflow: "hidden", fontWeight: "bold" },
+                            style: {
+                              overflow: "hidden",
+                              fontWeight: "bold",
+                            },
                             children: new URL(SITE.website).hostname,
                           },
                         },
@@ -122,7 +131,21 @@ export default async () => {
       width: 1200,
       height: 630,
       embedFont: true,
-      fonts: await loadGoogleFonts(SITE.title + SITE.desc + SITE.website),
+      fonts: [
+        {
+          name: "IBM Plex Mono",
+          data: fs.readFileSync(
+            path.join(
+              process.cwd(),
+              "public",
+              "fonts",
+              "IBMPlexMono-Regular.ttf"
+            )
+          ),
+          weight: 400,
+          style: "normal",
+        },
+      ],
     }
   );
 };
