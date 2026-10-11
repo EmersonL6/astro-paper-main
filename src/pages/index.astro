@@ -3,20 +3,15 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import Socials from "@/components/Socials.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
-import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
-import { SOCIALS } from "@/constants";
 
-const posts = await getCollection("blog");
-
+const posts = await getCollection("blog", ({ data }) => !data.draft);
 const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const recentPosts = sortedPosts;
 ---
 
 <Layout>
@@ -24,20 +19,17 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <main id="main-content" data-layout="index" class="app-layout">
     <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
       <h1 class="my-4 inline-block text-5xl font-bold">
-  随心所欲之地
-</h1>
+        随心所欲之地
+      </h1>
 
-<h2 class="text-3xl">
-  Land of Whatever
-</h2>
-     
+      <h2 class="text-3xl">
+        Land of Whatever
+      </h2>
 
       <p>
         在法律以及道德允许的范围内探索世界 / Roaming the world within the bounds of law and morality
-      
-      
+      </p>
     </section>
-
 
     {
       recentPosts.length > 0 && (
@@ -67,6 +59,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   document.addEventListener("astro:page-load", () => {
     const indexLayout = (document.querySelector("#main-content") as HTMLElement)
       ?.dataset?.layout;
+
     if (indexLayout) {
       sessionStorage.setItem("backUrl", "/");
     }
